@@ -1,0 +1,10 @@
+.different-it__profecional{
+    display: flex;
+    justify-content: center;
+    gap: 15px 8px;
+    @media screen and(max-width:767px) {
+        flex-wrap: wrap;
+        max-width: 326px;
+        justify-content: flex-start;
+    }
+}

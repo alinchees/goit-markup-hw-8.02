@@ -1,0 +1,7 @@
+.page{
+    font-size: 36px;
+    line-height: 1.17;  
+    @media screen and (max-width:1199.9px) {
+        display: none;
+    }
+}

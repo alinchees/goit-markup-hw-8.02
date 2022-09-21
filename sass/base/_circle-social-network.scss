@@ -1,0 +1,21 @@
+.team__circle{
+    display: flex;
+    color: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color var(--anim), color var(--anim);
+    &:active{
+        background-color: #2196F3;
+        color: #FFFFFF;
+    }
+}
+.team__circle:hover,
+.team__circle:focus{
+    @media screen and(min-width:1200px) {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    }
+}

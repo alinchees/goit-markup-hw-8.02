@@ -1,0 +1,19 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+.header__webstudioheader{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    color: black;
+    text-decoration: none;
+}
+.header__container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width:1199px) {
+        height: 60px;
+    }
+}

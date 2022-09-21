@@ -1,0 +1,32 @@
+@import './utils/vars';
+@import './utils/mixin';
+
+@import './base/circle-social-network';
+@import './base/common';
+@import './base/container';
+@import './base/resset';
+
+@import './components/client-container';
+@import './components/footer-form';
+@import './components/footer-social-network';
+@import './components/footer_centre-text.';
+@import './components/goals-flex';
+@import './components/mail-lists-header';
+@import './components/modal-button';
+@import './components/page-flex';
+@import './components/portfolio-button';
+@import './components/portfolio-page';
+@import './components/registration-form-modal';
+@import './components/team-flex';
+@import './components/menu-for-header';
+@import './components/navigations';
+
+@import './layouts/client';
+@import './layouts/footer';
+@import './layouts/general';
+@import './layouts/goals';
+@import './layouts/header';
+@import './layouts/modal';
+@import './layouts/page';
+@import './layouts/portfolio';
+@import './layouts/team';

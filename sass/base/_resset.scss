@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    display: block;
+}
+
+.section{
+    @include sectionr;
+    @media screen and (min-width: 1200px){
+        @include sectionr(94px,94px);
+    }
+}
+
+.span-web{
+    color: #2196F3;
+}
+.chief-text {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    @media screen and(max-width:1199px) {
+        font-size: 28px;
+        line-height: 1.18px;
+    }
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

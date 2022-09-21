@@ -1,0 +1,46 @@
+.client__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-top: 50px;
+    @media screen and(max-width:479.5px) {
+        justify-content: center;
+    }
+
+}
+.client__basis{
+    @media screen and(max-width:767px) {
+        flex-basis: calc((100% - 30px)/2);
+    }
+    @media screen and(max-width: 1199px){
+        flex-basis: calc((100% - 60px)/3);
+    }
+}
+.client__color-company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: color var(--anim), border-color var(--anim);
+    @media screen and(min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+}
+.client__color-company:hover,
+.client__color-company:focus{
+    color: var(--header-ul);
+    border-color: var(--header-ul);
+}
+.client__company{
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}

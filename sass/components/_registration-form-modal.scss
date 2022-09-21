@@ -1,0 +1,128 @@
+.modal__registration-form--caption{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    display: block;
+    letter-spacing: 0.03em;
+    color: var(--col);
+}
+.modal__registration-form--field{
+    margin-top: 10px;
+}
+.modal__registration-form--field:first-of-type{
+    margin-top: 12px;
+}
+.modal__registration-form--label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--grey);
+}
+.modal__registration-form--container-icon{
+    position: relative;
+}
+.modal__registration-form--input{
+    background: none;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 42px;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color var(--anim);
+}
+.modal__registration-form--input:focus{
+    border-color: #2196F3;
+}
+.modal__registration-form--icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+    transition: fill var(--anim);
+}
+.modal__registration-form--input:focus + .modal__registration-form--icon{
+    fill: #2196F3;
+}
+.container-form-checkbox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__registration-form--checkbox-input{
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+}
+.modal__registration-form--checkbox-input:checked + .modal__registration-form--checkbox-icon .checked__form-icon{
+    opacity: 1;
+}
+.modal__registration-form--checkbox-input:checked + .modal__registration-form--checkbox-icon .unchecked__form-icon{
+    opacity: 0;
+}
+.modal__registration-form--checkbox-icon{
+    left: 0;
+}
+.unchecked__form-icon{
+    opacity: 1;
+    transition: opacity var(--anim);
+}
+.checked__form-icon{
+    opacity: 0;
+    transition: opacity var(--anim);
+}
+.modal__registration-form--checkbox-text{
+    margin-left: 9px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+}
+.modal__registration-form--checkbox-link{
+    text-decoration: underline;
+    color: #2196F3;
+
+}
+.modal__registration-form--button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white);
+}
+.form-message{
+    width: 100%;
+    height: 120px;
+    padding: 16px 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    transition: border-color var(--anim);
+}
+.form-message::placeholder{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+.form-message:focus{
+    border-color: #2196F3;
+}

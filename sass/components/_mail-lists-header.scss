@@ -1,0 +1,61 @@
+.header__mail-list{
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+    @media screen and(min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
+    }
+    @media screen and(min-width:1200px){
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin-left: auto;
+    }
+}
+.header__mailtel{
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    color: var(--grey);
+    transition: color var(--anim);
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}
+.header__mailtel:hover,
+.header__mailtel:focus{
+    @media screen and(min-width:1200px) {
+    color: var(--blue);
+    }
+}
+.header__mailtel:active{
+    color: var(--blue);
+}
+.header__mailtel-hover{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--grey);
+}
+.header__phone{
+    width: 10px;
+    height: 14px;
+    fill: currentColor;
+    @media screen and(min-width:1199px) {
+        height: 16px;
+    }
+}
+.header__folder{
+    width: 14px;
+    height: 10px;
+    fill: currentColor; 
+    @media screen and(min-width:1199px) {
+        width: 16px;
+        height: 12px;
+    }
+}
